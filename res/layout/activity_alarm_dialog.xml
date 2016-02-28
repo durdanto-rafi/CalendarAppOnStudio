@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800dp"
+    android:layout_height="600dp"
+    android:background="@drawable/alarm_dialog_bg" >
+
+    <ImageView
+        android:id="@+id/ivAlarmDone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="50dp"
+        android:src="@drawable/ic_alarm_off_selector" />
+
+    <ImageView
+        android:id="@+id/ivAlarmStop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="50dp"
+        android:src="@drawable/alarm_close_selector" />
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/alarm_ring_right"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/alarm_ring_right" />
+
+        <com.uniqgroup.utility.CircularImageView_Purple
+            android:id="@+id/alarm_propic"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true"
+            android:padding="30dp" />
+
+        <ImageView
+            android:id="@+id/alarm_ring_left"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/alarm_ring_left" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/mainLinear_Dayview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ib_day"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/ic_day_view_selector"
+                android:scaleType="fitCenter"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/ib_week"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_week_view_selector"
+                android:scaleType="fitCenter"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/ib_month"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_month_view_selector"
+                android:scaleType="fitCenter"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/ibPrize"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_navigation_token"
+                android:scaleType="fitCenter"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvUserMonthName"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="@color/purplee"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/ibPrev"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_previous_selector"
+                android:scaleType="fitCenter"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvMiddle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/purplee"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/ibNext"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_next_selector"
+                android:scaleType="fitCenter"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

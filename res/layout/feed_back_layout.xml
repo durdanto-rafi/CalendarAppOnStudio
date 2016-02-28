@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/full_dialog_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/circular_tv_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="1" >
+
+    
+     <com.uniqgroup.utility.CircularImageView_Purple
+            android:id="@+id/dialogImageView"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerInParent="true"
+            android:padding="30dp" />
+
+    <LinearLayout
+        android:id="@+id/yes_no_linear_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/dialog_no"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_left_corner"
+            android:padding="15dp"
+            android:text="StartOver" />
+
+        <Button
+            android:id="@+id/dialog_yes"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_right_corner"
+            android:padding="15dp"
+            android:text="Finish" />
+    </LinearLayout>
+
+</LinearLayout>

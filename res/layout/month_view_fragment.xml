@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:background="@drawable/week_shadow_round_top_left" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="4" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight=".5"
+            android:background="@drawable/toplefttopright" >
+
+            <TextView
+                android:id="@+id/tvMonthFragHeader"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:weightSum=".7" >
+
+            <TextView
+                android:id="@+id/tvMonDay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:text="@string/MonDayListHeader"
+                android:textColor="@color/purplee" />
+
+            <TextView
+                android:id="@+id/tvTuesDay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:text="@string/TuesDayListHeader"
+                android:textColor="@color/purplee" />
+
+            <TextView
+                android:id="@+id/tvWednesDay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:text="@string/WednesDayListHeader"
+                android:textColor="@color/purplee" />
+
+            <TextView
+                android:id="@+id/tvThursDay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:text="@string/ThursDayListHeader"
+                android:textColor="@color/purplee" />
+
+            <TextView
+                android:id="@+id/tvFriDay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:text="@string/FirDayListHeader"
+                android:textColor="@color/purplee" />
+
+            <TextView
+                android:id="@+id/tvSaturDay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:text="@string/SaturDayListHeader"
+                android:textColor="@color/purplee" />
+
+            <TextView
+                android:id="@+id/tvSunDay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:text="@string/SunDayListHeader"
+                android:textColor="@color/purplee" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/first_seven_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum=".7" >
+
+                    <include
+                        android:id="@+id/day_one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_three"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_four"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_five"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_six"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_seven"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/second_seven_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum=".7" >
+
+                    <include
+                        android:id="@+id/day_eight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_nine"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_ten"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_eleven"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_twelve"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_thirteen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_fourteen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/third_seven_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum=".7" >
+
+                    <include
+                        android:id="@+id/day_fifteen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_sixteen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_seventeen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_eighteen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_nineteen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_twenty"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_twenty_one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fourth_seven_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum=".7" >
+
+                    <include
+                        android:id="@+id/day_twenty_two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_twenty_three"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_twenty_four"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_twenty_five"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_twenty_six"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_twenty_seven"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_twenty_eight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fifth_seven_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum=".7" >
+
+                    <include
+                        android:id="@+id/day_twenty_nine"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_thirty"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_thirty_one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_thirty_two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_thirty_three"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_thirty_four"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_thirty_five"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sixth_seven_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum=".7" >
+
+                    <include
+                        android:id="@+id/day_thirty_six"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_thirty_seven"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_thirty_eight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_thirty_nine"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_fourty"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_fourty_one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+
+                    <include
+                        android:id="@+id/day_fourty_two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        layout="@layout/month_view_row" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

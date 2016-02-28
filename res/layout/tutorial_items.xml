@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+    
+    <ImageView
+        android:id="@+id/flag"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+  
+    <!-- <TextView
+        android:id="@+id/ranklabel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:text="@string/ranklabel_string"
+        android:layout_below="@id/flag"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp" /> -->
+</LinearLayout>         

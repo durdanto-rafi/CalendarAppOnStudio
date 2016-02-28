@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="ash">#D6D6D6</color>
+    <color name="red">#F28585</color>
+    <color name="black">#000000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="green">#ff5fd35f</color>
+    <color name="cyan">#00796b</color>
+    <color name="dkgray">#ff444444</color>
+    <color name="gray">#ff888888</color>
+    <color name="light_orange">#dadada</color>
+    <color name="purplee">#ff82358b</color>
+    <color name="week_view_bg">#ffefe3ef</color>
+    <color name="gray_reg">#706D6C</color>
+    <color name="orange_promo">#F16221</color>
+    <color name="blackk">#000</color>
+    <color name="login_green">#326b6a</color>
+    <color name="login_green_selector">#1f4746</color>
+    <color name="login_orange">#f36f21</color>
+    <color name="login_orange_selector">#ad4508</color>
+    <color name="tutorial_black">#3c3c3b</color>
+    <color name="app_green">#53bbad</color>
+    <color name="translucent_black">#80000000</color>
+	<color name="light_purple">#ffefe3ef</color>
+	<color name="yellow">#ffc6a1ce</color>
+</resources>

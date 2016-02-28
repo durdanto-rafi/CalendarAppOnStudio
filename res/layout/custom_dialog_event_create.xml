@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/triangle_box"
+        android:gravity="center_horizontal"
+        >
+    <View
+        android:layout_width="70dp"
+        android:layout_height="70dp" 
+        android:background="@drawable/event_custom_dialog_triangle_shape" 
+        android:orientation="horizontal"
+        
+        />
+	 </LinearLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="70dp" 
+        android:background="@drawable/event_custom_dialog_rectangle_shape" 
+        android:layout_below="@+id/triangle_box"
+        >
+
+        <ImageButton
+            android:id="@+id/event_camera_ib"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_photo" 
+            android:layout_margin="5dp"
+            />
+
+        <ImageButton
+            android:id="@+id/event_folder_ib"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/folder" 
+            android:layout_margin="5dp"
+            />
+
+        <ImageButton
+            android:id="@+id/event_sdcard_ib"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_folder"
+            android:layout_margin="5dp"
+             />
+
+        <ImageButton
+            android:id="@+id/event_chrome_ib"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_imagefrominternet" 
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

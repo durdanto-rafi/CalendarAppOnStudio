@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum=".9" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".1"
+            android:background="@android:color/transparent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".7"
+            android:background="#ffffff" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight=".1"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_purple"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum=".9" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:textColor="@color/purplee" />
+
+                <TextView
+                    android:id="@+id/tvMonDay"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:text="@string/MonDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <TextView
+                    android:id="@+id/tvTuesDay"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:text="@string/TuesDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <TextView
+                    android:id="@+id/tvWednesDay"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:text="@string/WednesDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <TextView
+                    android:id="@+id/tvThursDay"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:text="@string/ThursDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <TextView
+                    android:id="@+id/tvFriDay"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:text="@string/FirDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <TextView
+                    android:id="@+id/tvSaturDay"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:text="@string/SaturDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <TextView
+                    android:id="@+id/tvSunDay"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:text="@string/SunDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".1"
+                    android:gravity="center"
+                    android:textColor="@color/purplee" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:background="@android:color/transparent"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:weightSum="1" >
+
+                <ListView
+                    android:id="@+id/lstPrize"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    android:listSelector="@drawable/list_selector" >
+
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

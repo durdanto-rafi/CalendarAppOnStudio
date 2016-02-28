@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CalendarApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_create">UserCreate</string>
+    <string name="title_activity_event_create">EventCreateActivity</string>
+    <string name="title_activity_user_event_list">UserEventListActivity</string>
+    <string name="provide_Image_event_desc">Please provide activity description !</string>
+    <string name="provide_Image_event_avatar">Please provide activity image !</string>
+    <string name="provide_Image_event_sequence">Please provide at least 1 action !</string>
+    <string name="provide_Image_event_alarm">Please select a day !</string>
+    <string name="uniq_techrapy">Uniq Techrapy</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="password">Password</string>
+    <string name="wrong_password_alert">Wrong Password!</string>
+    <string name="image_folder_path">/Android/Data/Calender App</string>
+    <string name="ranklabel_string">"LOREM IPSUM"</string>
+    <string name="img_tuto_s01">"Calendapp es una aplicación para facilitar el desarrollo de actividades ejecutivas en usuarios con dificultades de procesamiento, funciones superiores, lenguaje o necesidad de apoyo visual.
+"</string>
+    <string name="img_tuto_s02">"En este Menú encontrará nuestra información de contacto. ¡ No dude en llamarnos ! De igual modo podrá acceder a la Ventana de Claves y este mismo Tutorial cuando desee recordarlos.
+"</string>
+    <string name="img_tuto_s03">"El Tutorial le ofrecerá la información fundamental para comprender Calendapp. Así como la función de cada uno de los iconos de acción y navegación. Le recomendamos llegar hasta el final.
+"</string>
+    <string name="img_tuto_s04">"La Ventana de Claves es un sistema sencillo que evitará que los usuarios accedan a secciones inconvenientes. Asigne una clave (1,2 o 3) a los usuarios y después ejecute la secuencia de colores.
+"</string>
+    <string name="img_tuto_s05">"La Pantalla de Usuarios le permitirá gestionar los usuarios de Calendapp. Pulsando dos veces (Doble Tab) sobre el usuario accederá a su Vista de Actividades del día. Si el usuario tienes una Clave asignada, ésta será solicitada.
+"</string>
+    <string name="img_tuto_s06">"Mediante un gesto (Swipe) con dos dedos, de izquierda a derecha en la parte superior de la pantalla, accedera al modo edición. En la parte inferior derecha de la pantalla, encontrará los iconos de acción principales (Nuevo, Eliminar y Guardar y Salir).
+"</string>
+    <string name="img_tuto_s07">"Haciendo Doble Tab sobre un usuario, entrará en su edición. Debe asignar un nombre e imagen al mismo; de igual modo podrá asignar un Clave (icono de candado) o la vista de preferencia del usuario (Día, Semana o Mes). 
+"</string>
+    <string name="img_tuto_s08">"La Vista de Día del usuario le muestra las actividades programadas de cada día en tres columnas, separadas por franjas horarias funcionales. El usuario podrá anticipar sus actividades y marcar las mismas como realizadas.
+"</string>
+    <string name="img_tuto_s09">"Accediendo al modo edición, emergerán los iconos de acción principales, asñi como la navegación para el cambio de Vista (semana, mes). Haciendo doble Tab sobre cualquiera de los elementos restantes de la pantalla, accederá de forma derivada a su edición.
+"</string>
+    <string name="img_tuto_s010">"Si hemos hecho Doble tab o pulsado el icono de nueva actividad, accederemos a esta pantalla. Cada actividad se compone de acciones. A su vez, las actividades pueden ser programadas con o sin alarma.Explore libremente los elementos y descubrira lo sencillo que resulta. Nota: El audio no es obligatorio.
+"</string>
+    <string name="img_tuto_s011">"Una vez realizada una actividad, cuando el usuario pulse sobre la misma, accederá a la Pantalla de Acciones, donde podrá ejecutar la propia actividad en secuencias de acción. Haciendo Tab sobre la acción, se iniciará la cadena de eventos (Habla, Vídeo, Timer y Valoración).
+"</string>
+    <string name="img_tuto_s012">"La Pantalla de Acciones también puede ser editada, mediante el Gesto de Edición. Pulsando sobre cualquier elemento, accederá a su edición de forma derivada y directa.
+"</string>
+    <string name="img_tuto_s013">"Video: El Video se ejecuta en primer lugar. El usuario deberá pulsar sobre el Play para iniciar el mismo (igual para la Pausa). Para salir del Video si este no ha finalizado, deberá realizar el Gesto de Edición en la parte superior.
+"</string>
+    <string name="img_tuto_s014">"Timer: El Timer se ejecuta en segundo lugar, si hay un vídeo asignado a la acción. El usuario deberá pulsar sobre el Play para iniciar el mismo (igual para la Pausa). Para salir del Timer si este no ha finalizado, deberá realizar el Gesto de Edición en la parte superior.
+"</string>
+    <string name="img_tuto_s015">"Evaluación: Una vez visualizados el Vídeo y el Timer, destacará el icono de Evaluación y la acción en curso se volverá neutra. Haciendo Tab sobre el icono emergerán las opciones para valorar el éxito de la acción.
+"</string>
+    <string name="img_tuto_s016">"En este cuadro de dialogo, se muestran dos opciones y la acción en curso, el usuario (con o sin asistencia) puede valorar y seleccionar una de las opciones (verde o rojo), que más adelante serán registradas para computr en el sistema de economía de fichas.
+"</string>
+    <string name="img_tuto_s017">"Si la acción se realizó con éxito, la siguiente acción de la secuencia se activará y el usuario podrá continuar con el desarrollo de la actividad. Una actividad se computará como realizada cuando todas sus acciones se valoren en verde.
+"</string>
+    <string name="img_tuto_s018">"Si la acción no se realizo con éxito, toda la pantalla se bloqueará a excepción de la propio acción. La cual, debe ser repetida (repitiendo el ciclo de eventos) hasta que el usuario la realice con éxito y de este modo proceder con el resto de la actividad.
+"</string>
+    <string name="morningListHeader">Morning</string>
+    <string name="afternoonListHeader">Afternoon</string>
+    <string name="eveningListHeader">Evening</string>
+    <string name="startupTime">00:00</string>
+    <string name="title_activity_week_view_fragment">WeekViewFragment</string>
+    <string name="dummyTime">HH:MM</string>
+    <string name="title_activity_event_manage">EventManageActivity</string>
+    <string name="SaturDayListHeader"> Saturday</string>
+    <string name="SunDayListHeader"> Sunday</string>
+    <string name="MonDayListHeader"> Monday</string>
+    <string name="TuesDayListHeader"> Tuesday</string>
+    <string name="WednesDayListHeader"> Wednesday</string>
+    <string name="ThursDayListHeader"> Thursday</string>
+    <string name="FirDayListHeader"> Friday</string>
+    <string name="title_activity_month_view_fragment">MonthViewFragment</string>
+    <string name="PasswordName"> Pass</string>
+    <string name="ViewName"> View</string>
+    <string name="Name"> Name </string>
+    <string name="None"> None </string>
+    <string name="Pass1"> Pass1 </string>
+    <string name="Pass2"> Pass2 </string>
+    <string name="Pass3"> Pass3 </string>
+    <string name="DayName"> DayView </string>
+    <string name="WeekName"> WeekView </string>
+    <string name="MonthName"> MonthView </string>
+    <string name="EventCreateStringName">  Swipe rigth on top area to enter on edit mode and create a new activity. </string>
+    <string name="UserCreateStringName">  Swipe rigth on top area to enter on edit mode and create a new user. </string>
+    <string name="title_activity_fragment_name_change_dialog">FragmentNameChangeDialog</string>
+    <string name="title_activity_prize">PrizeActivity</string>
+    <string name="title_activity_alarm_dialog">AlarmDialog</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+    <string name="userExceedMessage">User limit exceed, delete user to add new.</string>
+    <string name="alarmSetForUserMessage">Alarm is set for selected user</string>
+    <string name="title_activity_feedback_relod_dialog">FeedbackRelodDialog</string>
+	<string name="userDeleteMessage">Selected users deleted successfully !</string>
+	<string name="userNameValidation">Please Enter User Name</string>
+	<string name="userPricureValidation">Select Profile Image</string>
+</resources>

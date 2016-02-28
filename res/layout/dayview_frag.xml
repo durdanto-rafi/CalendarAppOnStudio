@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:weightSum="1.0" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight=".05" />
+
+    <LinearLayout
+        android:id="@+id/ln_1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight=".28"
+        android:background="@drawable/shadow"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".05"
+            android:gravity="center"
+            android:text="@string/morningListHeader"
+            android:textColor="@color/purplee" />
+
+        <ListView
+            android:id="@+id/morning_dayview_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".95"
+            android:divider="#fff"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/list_selector" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight=".029" />
+
+    <LinearLayout
+        android:id="@+id/ln_2"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight=".28"
+        android:background="@drawable/shadow"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".05"
+            android:gravity="center"
+            android:text="@string/afternoonListHeader"
+            android:textColor="@color/purplee" />
+
+        <ListView
+            android:id="@+id/afternoon_dayview_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".95"
+            android:divider="#fff"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/list_selector" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight=".029" />
+
+    <LinearLayout
+        android:id="@+id/ln_3"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight=".28"
+        android:background="@drawable/shadow"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".05"
+            android:gravity="center"
+            android:text="@string/eveningListHeader"
+            android:textColor="@color/purplee" />
+
+        <ListView
+            android:id="@+id/evening_dayview_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".95"
+            android:divider="#fff"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/list_selector" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight=".05" />
+
+</LinearLayout>

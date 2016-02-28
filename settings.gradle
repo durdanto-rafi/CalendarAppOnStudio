@@ -1,0 +1,1 @@
+include ':app', ':File Chooser', ':NewQuickAction3D', ':simple-crop-image-lib'

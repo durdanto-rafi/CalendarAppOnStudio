@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="950dp"
+    android:layout_height="600dp"
+    android:background="@drawable/alarm_dialog_bg"
+    tools:context="com.uniqgroup.application.MonthViewImageChangerDialog" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="90dp"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gvMonthImageChanger"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:columnWidth="120dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@drawable/list_selector_grid"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" >
+        </GridView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivMonthOk"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/ic_tick" />
+
+    <ImageView
+        android:id="@+id/ivMonthClose"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_close_window_selector" />
+
+</RelativeLayout>

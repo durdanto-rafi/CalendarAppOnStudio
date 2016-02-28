@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@drawable/bg_cloud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efe3ef" >
+
+    <!-- AVATAR -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_cloud" >
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_transparente_edition"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <!-- 1.1 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".15"
+                android:orientation="horizontal" >
+            </LinearLayout>
+            <!-- 1.2 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".75"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <!-- 1.2.1 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".15"
+                    android:weightSum="1" >
+                </LinearLayout>
+                <!-- 1.2.2 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".80"
+                    android:orientation="vertical"
+                    android:weightSum="10" >
+
+                    <!-- 1.2.2.1 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <!-- 1.2.2.1.1 -->
+
+                        <EditText
+                            android:id="@+id/event_description"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight=".27"
+                            android:background="@drawable/shadow"
+                            android:gravity="center"
+                            android:hint="Name"
+                            android:imeActionLabel="Done"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:textSize="20dp" >
+                        </EditText>
+
+                        <!-- 1.2.2.1.2 -->
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight=".7"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <!-- 1.2.2.1.2.1 -->
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight=".1" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- 1.2.2.2 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5.5"
+                        android:orientation="vertical"
+                        android:weightSum="1" >
+
+                        <!-- 1.2.2.2.1 -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".05" >
+                        </LinearLayout>
+                        <!-- 1.2.2.2.2 -->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".9"
+                            android:orientation="horizontal"
+                            android:weightSum="1" >
+
+                            <!-- 1.2.2.2.2.1 -->
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight=".27"
+                                android:background="@drawable/round_corner_white"
+                                android:orientation="vertical"
+                                android:weightSum="1" >
+
+                                <ImageButton
+                                    android:id="@+id/event_main_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight=".8"
+                                    android:background="@drawable/dotted_border_imageview" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_weight=".2"
+                                    android:orientation="horizontal"
+                                    android:weightSum="13" >
+
+                                    <!-- 1.4.4.2.1 -->
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="3" />
+                                    <!-- 1.4.4.2.2 -->
+
+                                    <ImageButton
+                                        android:id="@+id/camera_image_bt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="2"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_photo_selector" />
+                                    <!-- 1.4.4.2.3 -->
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".7" />
+                                    <!-- 1.4.4.2.4 -->
+
+                                    <ImageButton
+                                        android:id="@+id/gallery_image_bt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="2"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_picture_selector" />
+                                    <!-- 1.4.4.2.5 -->
+
+                                    <View
+                                        android:layout_width="20dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".7" />
+                                    <!-- 1.4.4.2.6 -->
+
+                                    <ImageButton
+                                        android:id="@+id/sdcard_image_bt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="2"
+                                        android:background="@android:color/transparent"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_folder_selector" />
+                                    <!-- 1.4.4.2.7 -->
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <!-- 1.2.2.2.2.2 -->
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight=".04" >
+                            </LinearLayout>
+
+                            <!-- 1.2.2.2.2.3 -->
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight=".7"
+                                android:orientation="vertical" >
+
+                                <!-- 1.2.2.2.2.3.1 -->
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight=".45"
+                                    android:orientation="horizontal"
+                                    android:weightSum="44" >
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".3" />
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".3" />
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq3"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".3" />
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".3" />
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq5"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".3" />
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq6"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+                                </LinearLayout>
+
+                                <!-- 1.2.2.2.2.3.2 -->
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight=".02" >
+                                </LinearLayout>
+
+                                <!-- 1.2.2.2.2.3.3 -->
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight=".45"
+                                    android:orientation="horizontal"
+                                    android:weightSum="44" >
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq7"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".3" />
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq8"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".3" />
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq9"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".3" />
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq10"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".3" />
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq11"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight=".3" />
+
+                                    <ImageButton
+                                        android:id="@+id/event_seq12"
+                                        android:layout_width="0dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="7"
+                                        android:background="@drawable/shadow"
+                                        android:padding="5dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/ic_new_edition" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!-- 1.2.2.2.3 -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".05" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- 1.2.2.3 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:weightSum="6.5" >
+
+                        <!-- 1.2.2.3.1 -->
+
+
+                        <!-- 1.2.2.3.2 -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
+                        </LinearLayout>
+
+                        <!-- 1.2.2.3.3 -->
+
+
+                        <!-- 1.2.2.3.4 -->
+
+
+                        <!-- 1.2.2.3.5 -->
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4"
+                            android:background="@drawable/shadow"
+                            android:orientation="horizontal"
+                            android:weightSum="22.6" >
+
+                             <View
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight=".3" />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center"
+                                android:orientation="vertical" >
+
+                                <ImageView
+                                    android:id="@+id/btnChangeTime"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_time_selector" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvTime"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center"
+                                android:text="@string/dummyTime"
+                                android:textColor="@color/purplee" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight=".5" />
+
+                            <CheckBox
+                                android:id="@+id/chkMon"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.8"
+                                android:text="M"
+                                android:textColor="@color/purplee" />
+
+                            <CheckBox
+                                android:id="@+id/chkTue"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.8"
+                                android:text="T"
+                                android:textColor="@color/purplee" />
+
+                            <CheckBox
+                                android:id="@+id/chkWed"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.8"
+                                android:text="W"
+                                android:textColor="@color/purplee" />
+
+                            <CheckBox
+                                android:id="@+id/chkThu"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.8"
+                                android:text="T"
+                                android:textColor="@color/purplee" />
+
+                            <CheckBox
+                                android:id="@+id/chkFri"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.8"
+                                android:text="F"
+                                android:textColor="@color/purplee" />
+
+                            <CheckBox
+                                android:id="@+id/chkSat"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.8"
+                                android:text="S"
+                                android:textColor="@color/purplee" />
+
+                            <CheckBox
+                                android:id="@+id/chkSun"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.8"
+                                android:text="S"
+                                android:textColor="@color/purplee" />
+
+                            <CheckBox
+                                android:id="@+id/chkAll"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:text="All the weeks"
+                                android:textColor="@color/purplee" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight=".5" />
+
+                            <ToggleButton
+                                android:id="@+id/tglALarmOnOff"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/alarm_on_off_toggle_selector"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:textOff=""
+                                android:textOn="" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight=".5" />
+
+                            <ImageView
+                                android:id="@+id/ivDailyPrize"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/day_prize_selector"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter" />
+
+                            <ImageView
+                                android:id="@+id/ivWeeklyPrize"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/week_prize_selector"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter" />
+                             <View
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight=".3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 1.2.3 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".05"
+                    android:weightSum="1" >
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 1.3 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".10"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+            </LinearLayout>
+            <!-- phase 1 completed -->
+            <!-- phase 2 completed -->
+            <!-- phase 3 completed -->
+            <!-- phase 4 completed -->
+            <!-- phase 5 completed -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp" >
+
+        <com.uniqgroup.utility.CircularImageView
+            android:id="@+id/user_avatar_event_list_imgv"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_cloud_user" />
+
+            <TextView
+                android:id="@+id/user_avatar_name_event_list_imgv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Jeorge Garcia"
+                android:textColor="#fff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <!-- EDIT ICON -->
+
+        <ImageView
+            android:id="@+id/event_edit_imgv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_edition_selector"
+            android:visibility="invisible" />
+
+        <!-- DELETE ICON -->
+
+        <ImageView
+            android:id="@+id/event_delete_imgv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_remove_selector"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/event_add_imgv"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_done_selector" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/event_cancel_imgv"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_cross"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/ibtnBack"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_back_selector" />
+
+</RelativeLayout>

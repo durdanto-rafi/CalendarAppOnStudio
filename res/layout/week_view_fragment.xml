@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_cloud"
+    android:padding="20dp"
+    android:weightSum="1.0"
+    tools:context="com.uniqgroup.application.WeekViewFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="0.35" >
+
+            <LinearLayout
+                android:id="@+id/llMonDay"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tvMonDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".05"
+                    android:gravity="center"
+                    android:text="@string/MonDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <ListView
+                    android:id="@+id/lstMonDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".95"
+                    android:divider="#fff"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@drawable/list_selector" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTuesDay"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tvTuesDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".05"
+                    android:gravity="center"
+                    android:text="@string/TuesDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <ListView
+                    android:id="@+id/lstTuesDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".95"
+                    android:divider="#fff"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@drawable/list_selector" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWednesDay"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tvWednesDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".05"
+                    android:gravity="center"
+                    android:text="@string/WednesDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <ListView
+                    android:id="@+id/lstWednesDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".95"
+                    android:divider="#fff"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@drawable/list_selector" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llThursDay"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tvThursDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".05"
+                    android:gravity="center"
+                    android:text="@string/ThursDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <ListView
+                    android:id="@+id/lstThursDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".95"
+                    android:divider="#fff"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@drawable/list_selector" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llFriDay"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tvFriDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".05"
+                    android:gravity="center"
+                    android:text="@string/FirDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <ListView
+                    android:id="@+id/lstFriDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".95"
+                    android:divider="#fff"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@drawable/list_selector" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSaturDay"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tvSaturDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".05"
+                    android:gravity="center"
+                    android:text="@string/SaturDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <ListView
+                    android:id="@+id/lstSaturDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".95"
+                    android:divider="#fff"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@drawable/list_selector" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSunDay"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/shadow"
+                android:orientation="vertical"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tvSunDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".05"
+                    android:gravity="center"
+                    android:text="@string/SunDayListHeader"
+                    android:textColor="@color/purplee" />
+
+                <ListView
+                    android:id="@+id/lstSunDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".95"
+                    android:divider="#fff"
+                    android:dividerHeight="10dp"
+                    android:listSelector="@drawable/list_selector" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

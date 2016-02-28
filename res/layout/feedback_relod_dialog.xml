@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800dp"
+    android:layout_height="600dp"
+    android:background="@drawable/alarm_dialog_bg" >
+
+    <ImageView
+        android:id="@+id/happyFace_feedback_reload"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/feedback_selector" />
+
+    <ImageView
+        android:id="@+id/sad_feedback_reload"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="35dp"
+        android:src="@drawable/alarm_close_selector" />
+
+</RelativeLayout>
